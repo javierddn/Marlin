@@ -65,6 +65,17 @@
 #include "pins_RAMPS_13.h"
 
 //
+// CUSTOM
+// FILAMENT_RUNOUT
+//
+#undef FIL_RUNOUT_PIN
+#define FIL_RUNOUT_PIN                       57
+// BLTOUCH:
+//  - SERVO01
+#undef SERVO0_PIN
+#define SERVO0_PIN                        18
+
+//
 // Z Probe (when not Z_MIN_PIN)
 //
 #undef Z_MIN_PROBE_PIN
@@ -102,9 +113,9 @@
 // IND_S_5V the option Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN will not work.
 #ifdef Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
   #undef Z_MIN_PIN
-  #undef Z_MAX_PIN
+  // #undef Z_MAX_PIN
   #define Z_MIN_PIN                           19  // IND_S_5V
-  #define Z_MAX_PIN                           18  // Z-MIN Label
+  // #define Z_MAX_PIN                           18  // Z-MIN Label
 #endif
 
 //
