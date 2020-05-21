@@ -46,7 +46,7 @@
 /**
  * Defines a generic printer name to be output to the LCD after booting Marlin.
  */
-#define MACHINE_NAME "Leviatan"
+#define MACHINE_NAME "Phoenix"
 
 /**
  * The SOURCE_CODE_URL is the location where users will find the Marlin Source
@@ -59,7 +59,7 @@
 /**
  * Default generic printer UUID.
  */
-#define DEFAULT_MACHINE_UUID "34289738-525a-4ee1-be7b-6db7beb8f0f0"
+#define DEFAULT_MACHINE_UUID "28ca2f66-c33c-4141-a42e-b5e8584a9258"
 
 /**
  * The WEBSITE_URL is the location where users can get more information such as

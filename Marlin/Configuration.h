@@ -484,9 +484,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Tuned PID values using M303 E0 S205 C8
   // M301 P18.87 I1.13 D78.47
-#define DEFAULT_Kp 12.06
-#define DEFAULT_Ki 0.53
-#define DEFAULT_Kd 68.92
+#define DEFAULT_Kp 13.40
+#define DEFAULT_Ki 0.59
+#define DEFAULT_Kd 76.02
 
 #endif // PIDTEMP
 
@@ -721,7 +721,7 @@
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
 // #define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 8000, 218.77 }
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160.48, 8000, 209.75 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 8000, 223 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -947,7 +947,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { -20, -33.3, -2.34 } //  { -20, -33.3, -2.225 }
+#define NOZZLE_TO_PROBE_OFFSET { -19.02, -33, -2.55 } // { -19.02, -33, -2.55 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
