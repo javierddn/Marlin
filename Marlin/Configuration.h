@@ -721,7 +721,7 @@
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
 // #define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 8000, 218.77 }
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160.48, 8000, 209.75 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160.24, 159.76, 8000, 209.75 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -947,7 +947,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { -20, -33.3, -2.34 } //  { -20, -33.3, -2.225 }
+#define NOZZLE_TO_PROBE_OFFSET { -20, -33.3, -2.5 } //  { -20, -33.3, -2.225 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
