@@ -1325,7 +1325,7 @@
  * Useful to retract or move the Z probe out of the way.
  */
 // #define Z_PROBE_END_SCRIPT "G27 P0"
-#define Z_PROBE_END_SCRIPT "G1 Z10 F180\nG1 X10 Y287 F12000" // "G1 Z10 F12000\nG1 X15 Y330\nG1 Z0.5\nG1 Z10"
+#define Z_PROBE_END_SCRIPT "G1 Z10 F180\nG1 X10 Y287" // "G1 Z10 F12000\nG1 X15 Y330\nG1 Z0.5\nG1 Z10"
 
 
 // @section homing
