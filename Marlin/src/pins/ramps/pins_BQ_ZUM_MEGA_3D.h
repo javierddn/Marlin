@@ -43,7 +43,7 @@
 // IND_S_5V the option Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN will not work.
 #if ENABLED(Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN)
   #define Z_MIN_PIN                           19  // IND_S_5V
-  #define Z_MAX_PIN                           18  // Z-MIN Label
+//  #define Z_MAX_PIN                           18  // Z-MIN Label
 #endif
 
 //
@@ -120,6 +120,24 @@
 // Import RAMPS 1.3 pins
 //
 #include "pins_RAMPS_13.h" // ... RAMPS
+
+//
+// CUSTOM
+// FILAMENT_RUNOUT
+//
+#ifndef FIL_RUNOUT_PIN
+  #define FIL_RUNOUT_PIN                      57
+#endif
+//#undef FIL_RUNOUT_PIN
+//#define FIL_RUNOUT_PIN                       57
+
+// BLTOUCH:
+//  - SERVO01
+#ifndef SERVO0_PIN
+  #define SERVO0_PIN                          18
+#endif
+//#undef SERVO0_PIN
+//#define SERVO0_PIN                        18
 
 //
 // Hephestos 2 heated bed upgrade kit uses pin 8
